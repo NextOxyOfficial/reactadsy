@@ -6,6 +6,13 @@
   </div>
 </template>
 
+<script setup>
+// Handle back button for mobile devices
+if (process.client) {
+  useBackButton()
+}
+</script>
+
 <style>
 /* Add these styles to prevent zooming issues on mobile */
 @viewport {
